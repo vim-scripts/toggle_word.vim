@@ -1,0 +1,21 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1748
+
+Toggles words and preserves case. The words will get converted like this:
+
+  on -> off
+  On -> Off
+  ON -> OFF
+ 
+any other case gets converted to lowercase, e.g.:
+
+  tRUe -> false
+
+Inspired from vimscript #1676
+All I really wanted besides what that script did, was the ability to
+preserve the case of words.
+
+Usage:
+Once installed it will give you a ToggleWord() command and will map it by
+default to "<leader>t". All you need to do is position the cursor over the word
+you want to toggle and press \t in normal or visual mode.
+
