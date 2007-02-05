@@ -1,0 +1,31 @@
+HISTORY
+
+v1.0 Sat Dec 30 14:02:35 EET 2006
+ - Initial release
+
+v1.1 Sat Dec 30 17:59:50 EET 2006
+ - Simplified the dictionary format. Now you don't have to worry about quotes,
+   commas and square brackets anymore, it's all "just text".
+
+v1.2 Fri Jan  5 17:27:01 EET 2007
+ - Refactored the code a little bit.
+
+v1.3 Wed Jan 17 23:14:24 EET 2007
+ - Refactored the code once again.
+   This time I appealed to the Ruby Talk community for a review of my Ruby 
+   code, and some great solutions came up, way better than what I found. I
+   picked one that's simply amazing, preprocessing everything ahead of time 
+   and when the toggle is called, simply return the appropriate value.
+   Many thanks to Gary Wright for this beautiful solution, the entire thread
+   can be can be found here:
+   http://blade.nagaokaut.ac.jp/cgi-bin/scat.rb/ruby/ruby-talk/233544
+
+ - Initially introduced the Vim7 version of the plugin.
+
+ - Added documentation.
+
+ - Changed the default binding from ,t to <leader>t
+
+
+
+
