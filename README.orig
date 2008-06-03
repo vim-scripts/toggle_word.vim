@@ -1,27 +1,45 @@
 
 Toggle Word
 
-Version: 1.3
-Last change: Mon 05 Feb 2007 02:59:56 PM EET
+Version: 1.4
+Last Change: Wed Jun  4 09:16:31 EEST 2008
 Author: Alexandru Ungur <alexandru@globalterrasoft.ro>
+Requires: Vim 7
+
 
 
 Description:
-Toggles words and preserves case, e.g. on -> off; On -> Off; ON -> OFF
-while still only needing to specify each pair only once.
+  Toggles words and preserves case, e.g. on -> off; On -> Off; ON -> OFF
+  while still only needing to specify each pair only once.
 
-Initially inspired from vimscript #1676 ; all I really wanted besides what 
-that script did, was the ability to preserve the case of words, but without 
-specifying  multiple pairs as in [on off], [On Off], etc.
+  Initially inspired from vimscript #1676 ; all I really wanted besides what 
+  that script did, was the ability to preserve the case of words, but without 
+  specifying  multiple pairs as in [on off], [On Off], etc.
 
-NOTE: This plugin requires either Vim6+ compiled with +ruby or Vim7.
 
-Please see INSTALL for install & configuration notes.
+Installation:
+  Simply copy the plugin/* files to your vim plugins folder.
+
+
+Configuration:
+  The plugin comes with a basic dictionary (please see plugin/toggle_word.vim)
+  but can easily be extended by defining any aditional word pairs into your
+  config file (typically .vimrc on unices) like this:
+
+      let g:toggle_words = { 'tomorrow' : 'yesterday' }
+
+  The user definied dictionary will be appended to the basic one. It will 
+  override any existing keys, so for example if you define this:
+
+      let g:toggle_words = { 'true' : 'untrue' }
+
+  'true' will no longer be toggled to 'false' but to 'untrue' instead.
 
 
 Usage:
-Once installed it will give you a ToggleWord() command and will map it by
-default to "<leader>t". All you need to do is position the cursor over the 
-word you want to toggle and press \t in normal or visual mode.
+  Once installed it will give you a ToggleWord() command and will map it by
+  default to "<leader>t". All you need to do is position the cursor over the 
+  word you want to toggle and press \t in normal or visual mode.
 
-Any feedback is highly welcome :-)
+
+Feedback is more than welcome :-)

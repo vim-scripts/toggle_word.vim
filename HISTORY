@@ -26,6 +26,15 @@ v1.3 Wed Jan 17 23:14:24 EET 2007
 
  - Changed the default binding from ,t to <leader>t
 
+v1.4 Wed Jun  4 09:16:31 EEST 2008
+ - Loaded a more comprehensive base dictionary trying to make
+   the plugin more useful out of the box. Suggestions for
+   adding more entries to the default dictionary are welcome;
 
+ - Changed the way that the user defined (g:toggle_words) 
+   dictionary works: it now gets merged into the default one,
+   so you can simply skip the entries already defined in the
+   base dictionary unless you need to override them.
 
-
+ - Retired the 'ruby' version of the plugin. You can fetch it from v1.3
+   if you need it, but no further development will be done on it
